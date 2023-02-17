@@ -1,0 +1,35 @@
+Draganoiu Andreea 322CD
+
+Tema 1 - Sistemul lui Biju
+
+1.touch  - creeaza un nou fisier care este adaugat la finalul listei de fisiere
+ 	   a directorului parinte "parent" (daca acesta nu exista deja)
+2.mkdir  - creeaza un nou director care este adaugat la finalul listei de 
+           directoare a directorului parinte "parent" (daca acesta nu exista deja)
+3.ls  	 - afiseaza mai intai directoarele si apoi fiserele din directorul parinte
+4.rm     - reface lista de fisiere a directorului curent dupa ce fisierul este
+           sters (daca acesta exista)
+5.rmdir	 - parcurg subarborele format de directorul care trebuie sters. Voi porni
+	   din acest director si voi parcurge in adancime pana gasesc primul
+           director care nu mai are alte directoare (dar poate avea fisiere). In
+	   acest caz sterg fisierele(daca sunt) si refac legaturile listei de 
+	   directoare din care l-am eliminat pe acesta. Algoritmul se reia
+	   intotdeauna incepand cu varful subarborelui vizat(directorul dat ca 
+	   parametru in rmdir) pana cand se sterg toate subdirectoarele sale
+	   (cu tot cu fisiere).
+6.cd      - gasesc pointerul catre directorul cu numele "name" din directorul
+	    "target" si ma voi muta pe el. Daca name este ".." ma voi muta pe 
+	    parintele sau.
+7.tree    - parcurg ierarhia in adancime afisand mai intai directoarele, urmand
+	    sa afisez si fisierele cand se reiau apelurile recursive.
+8.pwd     - parcurg descendent calea directorului curent si formez in acelasi
+	    timp o lista de directoare care vor contine numele intalnit in cale.
+	    (puteam avea o structura mult mai simpla doar cu nume dar am refolosit
+	    structura Dir). In aceasta lista adaug la inceput, iar apoi voi
+	    parcurge aceasta lista de directoare pentru a forma un sir cu numele
+	    corespunzatoare
+9.stop    - oprire
+10.mv     - in cazul redenumirii unui fisier am sters acest fisier din lista 
+	    parintelui, urmand sa adaug fisierul cu numele nou la finalul listei.
+	    Pentru directoare a fost nevoie de mutarea efectiva la final deoarece
+	    directorul putea contine alte fisiere/directoare.
